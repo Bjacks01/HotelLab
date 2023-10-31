@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone Giveaway</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+
+
+<!--  nav bar  -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.linkedin.com/in/brandon-jacks-3ab4b6294/" target='_blank'>Brandon Jacks</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#" target='_blank'>Source Code</a></li>
+      <li><a href="#" target="_blank">Validation</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- Form Content -->
+<div class='content'>
+  <div class='container'>
+    <div id="titleBar" class="col-md-8 offset-md-2 text-center rounded">
+      <h1>Totally Legitimate iPhone Giveaway</h1>
+      <br>
+      <h3>Sign up to recieve a free iPhone 15 with these simple steps!</h3>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm'>
+<!--   Initialize form   -->
+    <form>
+    <label for='fname'>Full Name:</label>
+    <input type="text" id="fname" name="fname" placeholder='ex. Joe Blo'>
+      <br>
+    <label for='ccnum'>Credit Card Number:</label>
+    <input type='text' id='ccnum' name='ccnum' required>
+      <br>
+    <label for='aplEmail'>AppleID Email:</label>
+    <input type='text' id='aplEmail' name='aplEmail' required>
+      <br>
+    <label for='aplPass'>AppleID Password:</label>
+    <input type='password' id='aplPass' name='aplPass' required>
+      </div>
+<!--    second column for page readability    -->
+      <div class='col-sm'>
+          <label for='datetimeBox'>Date and Time filled out:</label>
+        <br>
+          <input type='datetime-local' id='datetimeBox' name='datetimeBox'>
+          <br>
+          <p>Choose an option below:<br>       
+          <input type="radio" id="house" name="shippingLocation" value="house">
+          <label for="house">Ship my iPhone to my house!</label>
+            <br>
+          <input type="radio" id="postOffice" name="shippingLocation" value="postOffice">
+          <label for="postOffice">Ship my iPhone to the post office!</label> 
+      </div>
+<!--     third column     -->
+      <div class='col-sm'>
+        <p>Select as many as apply to you:<br>
+        <input type="checkbox" id="cbox1" name="cbox1" value="Bike">
+  <label for="cbox1"> I am elderly or disabled</label><br>
+        <input type="checkbox" id="cbox2" name="cbox2" value="Bike">
+  <label for="cbox2"> I live alone</label><br>
+        <input type="checkbox" id="cbox3" name="cbox3" value="Bike">
+  <label for="cbox3"> I require assistance from a service animal</label><br>
+        <input type="checkbox" id="cbox4" name="cbox4" value="Bike">
+  <label for="cbox4"> I am running out of things to write here</label>
+      </div>
+    </div>
+<!--    puts submit/refresh buttons below the rest of the form    -->
+    <div class='row'>
+      <div id="bottomBar" class="col-md-8 offset-md-2 text-center rounded">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </div>
+    </form>
+<!--   ^ends form content^   -->
+ </div>
+  
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+
+</html>
